@@ -1,4 +1,4 @@
-﻿namespace DDD_Demo
+﻿namespace DDD_Demo.Domain
 {
     public enum AppPath
     {

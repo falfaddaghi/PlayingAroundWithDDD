@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using DDD_Demo.Api;
+using DDD_Demo.Db;
+using DDD_Demo.Domain;
 using Ploeh.AutoFixture.Xunit;
 using Xunit;
 using Xunit.Extensions;
 
-namespace DDD_Demo
+namespace DDD_Demo.Tests
 {
    public class ServiceStackTests
     {

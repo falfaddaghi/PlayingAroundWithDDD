@@ -1,25 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Cache;
-using System.Text;
-using System.Threading.Tasks;
+using DDD_Demo.Db;
+using DDD_Demo.Domain;
 
-namespace DDD_Demo
+namespace DDD_Demo.Api
 {
-    public class CreateLessonRequest
-    {
-        public CreateLessonRequest(Guid sectionId, Guid courseId, Lesson lesson)
-        {
-            SectionId = sectionId;
-            CourseId = courseId;
-            Lesson = lesson;
-        }
-
-        public Guid SectionId { get;  set; }
-        public Guid CourseId { get;  set; }
-        public Lesson Lesson { get;  set; }
-    }
+  
 
     public class ServiceStack
     {
@@ -49,6 +35,19 @@ namespace DDD_Demo
         }
     }
 
+    public class CreateLessonRequest
+    {
+        public CreateLessonRequest(Guid sectionId, Guid courseId, Lesson lesson)
+        {
+            SectionId = sectionId;
+            CourseId = courseId;
+            Lesson = lesson;
+        }
+
+        public Guid SectionId { get; set; }
+        public Guid CourseId { get; set; }
+        public Lesson Lesson { get; set; }
+    }
     public class GetCourseRequest
     {
         public Guid SectionId { get; set; }

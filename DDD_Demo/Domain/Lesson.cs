@@ -1,6 +1,6 @@
 using System;
 
-namespace DDD_Demo
+namespace DDD_Demo.Domain
 {
     public class Lesson
     {

@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DDD_Demo.Domain;
 
-namespace DDD_Demo
+namespace DDD_Demo.Db
 {
     
     

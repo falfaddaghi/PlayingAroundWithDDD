@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DDD_Demo
+namespace DDD_Demo.Domain
 {
     public interface IAggregateRoot 
     {        
