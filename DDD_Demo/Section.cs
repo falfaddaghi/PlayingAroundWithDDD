@@ -4,7 +4,10 @@ using System.Linq;
 
 namespace DDD_Demo
 {
-    public class Section
+    public interface IAggregateRoot 
+    {        
+    }
+    public class Section: Entity, IAggregateRoot
     {
         /*
          public bool IsApplicable { get;  } removed because it does not belong on this entity
@@ -27,7 +30,7 @@ namespace DDD_Demo
         public int Type { get;  } changed to enum
              
              */
-        public Guid Id { get; }
+        
         public string Name { get; private set; }
         public int SectionNumber { get; private set; }
         public AppPath AppPath { get; private set; }

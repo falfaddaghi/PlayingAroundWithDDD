@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace DDD_Demo
 {
-    public class Course
+    public class Entity
+    {
+        public Guid Id { get; protected set; }
+    }
+    public class Course:Entity
     {
         /*
             
@@ -26,7 +30,7 @@ namespace DDD_Demo
 
             public Section SectionID { get;  } removed not sure why yet for now its because I want a single directional nav though the entity
              */
-        public Guid Id { get; }
+        
         public string Name { get; private set; }
         public int CourseNumber { get; private set; }
         public AppPath AppPath { get; private set; }
